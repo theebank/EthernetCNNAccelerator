@@ -14,7 +14,9 @@ This repository contains the implementation of a **Convolutional Neural Network 
 ```
 📂 FPGA-ImageConvolution
 │── 📂 lab2_Theeban_Kumaresan.qar      # Quartus archive file for synthesis & implementation
+│── 📂 tests.qar      # Various Test Cases
 │── 📄 lab2.sv    # Main SystemVerilog source file
+│── 📄 lab2_tb.sv    # Main SystemVerilog testbench
 │── 📄 README.md             # Project documentation (this file)
 ```
 
