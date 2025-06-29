@@ -62,6 +62,7 @@ module ImageConv(
     endfunction
     
     always @* begin
+        //pipeline stage 1
         temp0 = $signed({{8{i_f[7]}},  i_f[7:0]})   * $signed({8'b0, bufferRow1[currPixelptr-2]});
         temp1 = $signed({{8{i_f[15]}}, i_f[15:8]})  * $signed({8'b0, bufferRow1[currPixelptr-1]});
         temp2 = $signed({{8{i_f[23]}}, i_f[23:16]}) * $signed({8'b0, bufferRow1[currPixelptr]});
@@ -71,8 +72,25 @@ module ImageConv(
         temp6 = $signed({{8{i_f[55]}}, i_f[55:48]}) * $signed({8'b0, bufferRow3[currPixelptr-2]});
         temp7 = $signed({{8{i_f[63]}}, i_f[63:56]}) * $signed({8'b0, bufferRow3[currPixelptr-1]});
         temp8 = $signed({{8{i_f[71]}}, i_f[71:64]}) * $signed({8'b0, i_x});
-    
+        //pipeline stage 2
         temp15out = temp0 + temp1 + temp2 + temp3 + temp4 + temp5 + temp6 + temp7 + temp8;
+        //temp01 = temp0 + temp1
+        //temp23 = temp2 + temp3
+        //temp45 = temp4 + temp5
+        //temp67 = temp6 + temp7
+        
+        //pipeline stage 3
+        //temp0123 = temp01 + temp23
+        //temp4567 = temp45 + temp67
+        
+        //pipeline stage 4
+        //temp01234567 = temp0123 + temp4567
+        
+        
+        //pipeline stage 5
+        //temp15out = temp01234567+temp8
+        
+        //pipeline stage 6
         tempout   = clamp(temp15out);
     end
 
