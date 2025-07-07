@@ -1,2 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Theeban/Documents/Vivado/FPGA-ImageConvolution/EthernetCNNAccelerator.srcs/sources_1/new/ImageConv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImageConv
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Theeban/Documents/Vivado/FPGA-ImageConvolution/EthernetCNNAccelerator.srcs/sources_1/new/MatrixMult.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MatrixMult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Theeban/Documents/Vivado/FPGA-ImageConvolution/EthernetCNNAccelerator.srcs/sources_1/new/bramBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bramBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Theeban/Documents/Vivado/FPGA-ImageConvolution/EthernetCNNAccelerator.srcs/sources_1/new/linebufferBRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module linebufferBRAM

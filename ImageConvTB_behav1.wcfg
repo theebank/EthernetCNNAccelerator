@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ImageConvTB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ImageConvTB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="367.501 ns"></ZoomEndTime>
+      <Cursor1Time time="400.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="501"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="46" />
+   <wvobject fp_name="/ImageConvTB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/i_ready" type="logic">
+      <obj_property name="ElementShortName">i_ready</obj_property>
+      <obj_property name="ObjectShortName">i_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/o_ready" type="logic">
+      <obj_property name="ElementShortName">o_ready</obj_property>
+      <obj_property name="ObjectShortName">o_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/i_f" type="array">
+      <obj_property name="ElementShortName">i_f[71:0]</obj_property>
+      <obj_property name="ObjectShortName">i_f[71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/i_x" type="array">
+      <obj_property name="ElementShortName">i_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_x[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/o_y" type="array">
+      <obj_property name="ElementShortName">o_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/identity_filter" type="array">
+      <obj_property name="ElementShortName">identity_filter[71:0]</obj_property>
+      <obj_property name="ObjectShortName">identity_filter[71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/edge_filter" type="array">
+      <obj_property name="ElementShortName">edge_filter[71:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_filter[71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/sharpen_filter" type="array">
+      <obj_property name="ElementShortName">sharpen_filter[71:0]</obj_property>
+      <obj_property name="ObjectShortName">sharpen_filter[71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/test_image" type="array">
+      <obj_property name="ElementShortName">test_image[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_image[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/result_image" type="array">
+      <obj_property name="ElementShortName">result_image[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_image[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/difference_image" type="array">
+      <obj_property name="ElementShortName">difference_image[31:0]</obj_property>
+      <obj_property name="ObjectShortName">difference_image[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/image_width" type="array">
+      <obj_property name="ElementShortName">image_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">image_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/image_height" type="array">
+      <obj_property name="ElementShortName">image_height[31:0]</obj_property>
+      <obj_property name="ObjectShortName">image_height[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/char" type="array">
+      <obj_property name="ElementShortName">char[31:0]</obj_property>
+      <obj_property name="ObjectShortName">char[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/temp" type="array">
+      <obj_property name="ElementShortName">temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/pixel_id" type="array">
+      <obj_property name="ElementShortName">pixel_id[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_id[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/pixel_val" type="array">
+      <obj_property name="ElementShortName">pixel_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_val[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/line" type="array">
+      <obj_property name="ElementShortName">line[8000:0]</obj_property>
+      <obj_property name="ObjectShortName">line[8000:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/valid_stall_tested" type="logic">
+      <obj_property name="ElementShortName">valid_stall_tested</obj_property>
+      <obj_property name="ObjectShortName">valid_stall_tested</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/saved_i_x" type="array">
+      <obj_property name="ElementShortName">saved_i_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">saved_i_x[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/out_id" type="array">
+      <obj_property name="ElementShortName">out_id[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_id[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/current_time" type="array">
+      <obj_property name="ElementShortName">current_time[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_time[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/ready_stall_tested" type="logic">
+      <obj_property name="ElementShortName">ready_stall_tested</obj_property>
+      <obj_property name="ObjectShortName">ready_stall_tested</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/fail" type="logic">
+      <obj_property name="ElementShortName">fail</obj_property>
+      <obj_property name="ObjectShortName">fail</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/golden_result" type="array">
+      <obj_property name="ElementShortName">golden_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">golden_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/sim_log" type="array">
+      <obj_property name="ElementShortName">sim_log[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_log[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/temp1" type="array">
+      <obj_property name="ElementShortName">temp1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/golden_pixel" type="array">
+      <obj_property name="ElementShortName">golden_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">golden_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/QSTEP" type="array">
+      <obj_property name="ElementShortName">QSTEP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">QSTEP[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/TIMESTEP" type="array">
+      <obj_property name="ElementShortName">TIMESTEP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TIMESTEP[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/FILTER_SIZE" type="array">
+      <obj_property name="ElementShortName">FILTER_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FILTER_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/PADDING_SIZE" type="array">
+      <obj_property name="ElementShortName">PADDING_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PADDING_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/PROJECT_DIR" type="array">
+      <obj_property name="ElementShortName">PROJECT_DIR[439:0]</obj_property>
+      <obj_property name="ObjectShortName">PROJECT_DIR[439:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/TEST_IMAGE" type="array">
+      <obj_property name="ElementShortName">TEST_IMAGE[639:0]</obj_property>
+      <obj_property name="ObjectShortName">TEST_IMAGE[639:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/GOLDEN_RES" type="array">
+      <obj_property name="ElementShortName">GOLDEN_RES[767:0]</obj_property>
+      <obj_property name="ObjectShortName">GOLDEN_RES[767:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group101" type="group">
+      <obj_property name="label">MatMul</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/i_f" type="array">
+         <obj_property name="ElementShortName">i_f[71:0]</obj_property>
+         <obj_property name="ObjectShortName">i_f[71:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/i_img" type="array">
+         <obj_property name="ElementShortName">i_img[71:0]</obj_property>
+         <obj_property name="ObjectShortName">i_img[71:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/i_ready" type="logic">
+         <obj_property name="ElementShortName">i_ready</obj_property>
+         <obj_property name="ObjectShortName">i_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/i_valid" type="logic">
+         <obj_property name="ElementShortName">i_valid</obj_property>
+         <obj_property name="ObjectShortName">i_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/o_valid" type="logic">
+         <obj_property name="ElementShortName">o_valid</obj_property>
+         <obj_property name="ObjectShortName">o_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/o_img" type="array">
+         <obj_property name="ElementShortName">o_img[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_img[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/multres" type="array">
+         <obj_property name="ElementShortName">multres[8:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">multres[8:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres0" type="array">
+         <obj_property name="ElementShortName">addres0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres0[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres1" type="array">
+         <obj_property name="ElementShortName">addres1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres2" type="array">
+         <obj_property name="ElementShortName">addres2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres2[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres3" type="array">
+         <obj_property name="ElementShortName">addres3[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres3[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres4" type="array">
+         <obj_property name="ElementShortName">addres4[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres4[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres5" type="array">
+         <obj_property name="ElementShortName">addres5[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres5[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres6" type="array">
+         <obj_property name="ElementShortName">addres6[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres6[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/addres7" type="array">
+         <obj_property name="ElementShortName">addres7[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addres7[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/tempresult" type="array">
+         <obj_property name="ElementShortName">tempresult[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tempresult[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/matmul/propagatingValid" type="array">
+         <obj_property name="ElementShortName">propagatingValid[4:0]</obj_property>
+         <obj_property name="ObjectShortName">propagatingValid[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group11014" type="group">
+      <obj_property name="label">line0Buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/we_a" type="logic">
+         <obj_property name="ElementShortName">we_a</obj_property>
+         <obj_property name="ObjectShortName">we_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/addr_a" type="array">
+         <obj_property name="ElementShortName">addr_a[511:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_a[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/din_a" type="array">
+         <obj_property name="ElementShortName">din_a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din_a[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/re_b" type="logic">
+         <obj_property name="ElementShortName">re_b</obj_property>
+         <obj_property name="ObjectShortName">re_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/addr_b" type="array">
+         <obj_property name="ElementShortName">addr_b[511:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_b[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/dout_b" type="array">
+         <obj_property name="ElementShortName">dout_b[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout_b[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line0/brm" type="array">
+         <obj_property name="ElementShortName">brm[0:511][7:0]</obj_property>
+         <obj_property name="ObjectShortName">brm[0:511][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group11025" type="group">
+      <obj_property name="label">line1Buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/we_a" type="logic">
+         <obj_property name="ElementShortName">we_a</obj_property>
+         <obj_property name="ObjectShortName">we_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/addr_a" type="array">
+         <obj_property name="ElementShortName">addr_a[511:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_a[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/din_a" type="array">
+         <obj_property name="ElementShortName">din_a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din_a[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/re_b" type="logic">
+         <obj_property name="ElementShortName">re_b</obj_property>
+         <obj_property name="ObjectShortName">re_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/addr_b" type="array">
+         <obj_property name="ElementShortName">addr_b[511:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_b[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/dout_b" type="array">
+         <obj_property name="ElementShortName">dout_b[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout_b[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/line1/brm" type="array">
+         <obj_property name="ElementShortName">brm[0:511][7:0]</obj_property>
+         <obj_property name="ObjectShortName">brm[0:511][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group11553" type="group">
+      <obj_property name="label">memWrapper</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ImageConvTB/dut/mem/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/i_valid" type="logic">
+         <obj_property name="ElementShortName">i_valid</obj_property>
+         <obj_property name="ObjectShortName">i_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/i_ready" type="logic">
+         <obj_property name="ElementShortName">i_ready</obj_property>
+         <obj_property name="ObjectShortName">i_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/i_x" type="array">
+         <obj_property name="ElementShortName">i_x[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_x[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/i_col_idx" type="array">
+         <obj_property name="ElementShortName">i_col_idx[511:0]</obj_property>
+         <obj_property name="ObjectShortName">i_col_idx[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/i_row_idx" type="array">
+         <obj_property name="ElementShortName">i_row_idx[511:0]</obj_property>
+         <obj_property name="ObjectShortName">i_row_idx[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/o_window" type="array">
+         <obj_property name="ElementShortName">o_window[71:0]</obj_property>
+         <obj_property name="ObjectShortName">o_window[71:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/o_valid" type="logic">
+         <obj_property name="ElementShortName">o_valid</obj_property>
+         <obj_property name="ObjectShortName">o_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/row0_p" type="array">
+         <obj_property name="ElementShortName">row0_p[7:0]</obj_property>
+         <obj_property name="ObjectShortName">row0_p[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/row1_p" type="array">
+         <obj_property name="ElementShortName">row1_p[7:0]</obj_property>
+         <obj_property name="ObjectShortName">row1_p[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/row2_shift" type="array">
+         <obj_property name="ElementShortName">row2_shift[2:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">row2_shift[2:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/row1_shift" type="array">
+         <obj_property name="ElementShortName">row1_shift[2:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">row1_shift[2:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/row0_shift" type="array">
+         <obj_property name="ElementShortName">row0_shift[2:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">row0_shift[2:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ImageConvTB/dut/mem/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/dut/i_col_idx_wire" type="array">
+      <obj_property name="ElementShortName">i_col_idx_wire[511:0]</obj_property>
+      <obj_property name="ObjectShortName">i_col_idx_wire[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ImageConvTB/dut/i_row_idx_wire" type="array">
+      <obj_property name="ElementShortName">i_row_idx_wire[511:0]</obj_property>
+      <obj_property name="ObjectShortName">i_row_idx_wire[511:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -20,23 +20,18 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module MatrixMult #(parameter PIXEL_DATAW=8, parameter PIXEL_DATAFLATW = 72)(
-    input wire clk,
-    input wire rst,
-    input wire signed [PIXEL_DATAFLATW-1:0] i_f,
-    input wire [PIXEL_DATAW-1:0] i_img0,
-    input wire [PIXEL_DATAW-1:0] i_img1,
-    input wire [PIXEL_DATAW-1:0] i_img2,
-    input wire [PIXEL_DATAW-1:0] i_img3,
-    input wire [PIXEL_DATAW-1:0] i_img4,
-    input wire [PIXEL_DATAW-1:0] i_img5,
-    input wire [PIXEL_DATAW-1:0] i_img6,
-    input wire [PIXEL_DATAW-1:0] i_img7,
-    input wire [PIXEL_DATAW-1:0] i_img8,
-    input wire i_ready,
-    input wire i_valid,
-    output wire o_valid,
-    output wire [PIXEL_DATAW-1:0] o_img
+module MatrixMult #(
+        parameter PIXEL_DATAW=8, 
+        parameter PIXEL_DATAFLATW = 72
+    )(
+        input wire clk,
+        input wire reset,
+        input wire signed [PIXEL_DATAFLATW-1:0] i_f,
+        input wire [(PIXEL_DATAW*9)-1:0] i_img,
+        input wire i_ready,
+        input wire i_valid,
+        output wire o_valid,
+        output wire [PIXEL_DATAW-1:0] o_img
     );
     localparam PIXEL_ADDEDW = PIXEL_DATAW*2;
     localparam PIPELINE_DEPTH = 5;
@@ -60,7 +55,7 @@ module MatrixMult #(parameter PIXEL_DATAW=8, parameter PIXEL_DATAFLATW = 72)(
     
     
     always @(posedge clk) begin
-        if(rst) begin
+        if(reset) begin
             for(i = 0;i<=PIXEL_DATAW;i=i+1) begin
                 multres[i] = 0;                
             end
@@ -70,15 +65,17 @@ module MatrixMult #(parameter PIXEL_DATAW=8, parameter PIXEL_DATAFLATW = 72)(
                 propagatingValid = {propagatingValid[PIPELINE_DEPTH-2:0],i_valid};
                 //pipelinestage1
                 //divide i_f from PIXEL_DATAFLATW into PIXEL_DATAW
-                multres[0] <= $signed({{8{i_f[7]}},  i_f[7:0]})   * $signed({8'b0, i_img0});
-                multres[1] <= $signed({{8{i_f[15]}}, i_f[15:8]})  * $signed({8'b0, i_img1});
-                multres[2] <= $signed({{8{i_f[23]}}, i_f[23:16]}) * $signed({8'b0, i_img2});
-                multres[3] <= $signed({{8{i_f[31]}}, i_f[31:24]}) * $signed({8'b0, i_img3});
-                multres[4] <= $signed({{8{i_f[39]}}, i_f[39:32]}) * $signed({8'b0, i_img4});
-                multres[5] <= $signed({{8{i_f[47]}}, i_f[47:40]}) * $signed({8'b0, i_img5});
-                multres[6] <= $signed({{8{i_f[55]}}, i_f[55:48]}) * $signed({8'b0, i_img6});
-                multres[7] <= $signed({{8{i_f[63]}}, i_f[63:56]}) * $signed({8'b0, i_img7});
-                multres[8] <= $signed({{8{i_f[71]}}, i_f[71:64]}) * $signed({8'b0, i_img8});
+                if(i_valid) begin
+                    multres[0] <= $signed({{8{i_f[7]}},  i_f[7:0]})   * $signed({8'b0, i_img[7:0]});
+                    multres[1] <= $signed({{8{i_f[15]}}, i_f[15:8]})  * $signed({8'b0, i_img[15:8]});
+                    multres[2] <= $signed({{8{i_f[23]}}, i_f[23:16]}) * $signed({8'b0, i_img[23:16]});
+                    multres[3] <= $signed({{8{i_f[31]}}, i_f[31:24]}) * $signed({8'b0, i_img[31:24]});
+                    multres[4] <= $signed({{8{i_f[39]}}, i_f[39:32]}) * $signed({8'b0, i_img[39:32]});
+                    multres[5] <= $signed({{8{i_f[47]}}, i_f[47:40]}) * $signed({8'b0, i_img[47:40]});
+                    multres[6] <= $signed({{8{i_f[55]}}, i_f[55:48]}) * $signed({8'b0, i_img[55:48]});
+                    multres[7] <= $signed({{8{i_f[63]}}, i_f[63:56]}) * $signed({8'b0, i_img[63:56]});
+                    multres[8] <= $signed({{8{i_f[71]}}, i_f[71:64]}) * $signed({8'b0, i_img[71:64]});
+                end
                 //pipelinestage2
                 addres0 <= multres[0] + multres[1];
                 addres1 <= multres[2] + multres[3];
